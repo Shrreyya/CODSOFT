@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Your Website</h1>
+            <p>A brief catchy tagline about your product or service.</p>
+            <a href="#features" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="feature">
+            <h2>Key Features</h2>
+            <p>Highlight your main features or offerings.</p>
+        </div>
+        <!-- Add more features as needed -->
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Introduce your company or yourself.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>Include a contact form or just your contact information.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure header stays above other content */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+section {
+    padding: 4rem 0; /* Adjust as needed */
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff; /* Adjust button color */
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Adjust hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+}
